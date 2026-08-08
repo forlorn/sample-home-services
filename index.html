@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irongate Home Services — Plumbing, HVAC &amp; Electrical</title>
+<meta name="description" content="Licensed plumbing, HVAC, and electrical repair. Same-day service across the metro. Check your ZIP code and book in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>LICENSED &amp; INSURED</span><span>•</span>
+    <span>24/7 EMERGENCY DISPATCH</span><span>•</span>
+    <span>SAME-DAY SERVICE</span><span>•</span>
+    <span>UPFRONT PRICING</span><span>•</span>
+    <span>LICENSED &amp; INSURED</span><span>•</span>
+    <span>24/7 EMERGENCY DISPATCH</span><span>•</span>
+    <span>SAME-DAY SERVICE</span><span>•</span>
+    <span>UPFRONT PRICING</span><span>•</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a href="#top" class="logo">
+      <span class="logo__mark">IG</span>
+      <span class="logo__text">IRONGATE<br><small>HOME SERVICES</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#area">Service area</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <div class="site-header__cta">
+      <a href="tel:1-844-555-0117" class="phone">
+        <span class="phone__label">Call now</span>
+        <span class="phone__number">(844) 555-0117</span>
+      </a>
+      <a href="#quote" class="btn btn--primary">Book service</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Plumbing · HVAC · Electrical</p>
+        <h1>Something broke.<br>We're already on the way.</h1>
+        <p class="hero__sub">Licensed technicians, upfront pricing, and a truck that actually shows up on time. Book online in under a minute or call for same-day dispatch.</p>
+        <div class="hero__actions">
+          <a href="#quote" class="btn btn--primary btn--lg">Get a free quote</a>
+          <a href="tel:1-844-555-0117" class="btn btn--ghost btn--lg">(844) 555-0117</a>
+        </div>
+        <ul class="trust-row">
+          <li><strong>4.9★</strong> avg. rating</li>
+          <li><strong>38 min</strong> avg. response</li>
+          <li><strong>12,400+</strong> jobs completed</li>
+        </ul>
+      </div>
+
+      <div class="hero__stamp-panel">
+        <div class="workorder" id="zipCheckCard">
+          <div class="workorder__head">
+            <span>WORK ORDER</span>
+            <span id="woNumber">#IG-08421</span>
+          </div>
+          <label for="zipInput" class="workorder__label">Check service in your ZIP code</label>
+          <div class="workorder__input-row">
+            <input type="text" id="zipInput" inputmode="numeric" maxlength="5" placeholder="e.g. 30306" aria-label="ZIP code">
+            <button type="button" id="zipCheckBtn" class="btn btn--primary">Check</button>
+          </div>
+          <div id="zipResult" class="stamp-result" hidden>
+            <div class="stamp" id="stampEl">
+              <span id="stampText">SERVICED</span>
+            </div>
+            <p id="stampMessage"></p>
+          </div>
+          <p class="workorder__note">Demo tool — swap in your real service-area ZIP list.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">What we fix</p>
+      <h2 class="section-title">Four trades. One dispatcher.</h2>
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🔧</div>
+          <h3>Plumbing</h3>
+          <p>Leaks, clogs, water heaters, and repipes — diagnosed and fixed the same visit whenever possible.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🌡️</div>
+          <h3>HVAC</h3>
+          <p>Heating and cooling repair, tune-ups, and replacements from technicians who show their math.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">⚡</div>
+          <h3>Electrical</h3>
+          <p>Panel upgrades, outlets, lighting, and troubleshooting — licensed electricians, permitted work.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🛠️</div>
+          <h3>Appliance repair</h3>
+          <p>Washers, dryers, dishwashers, and ranges. We carry common parts on the truck.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="how">
+    <div class="wrap how__grid">
+      <div>
+        <p class="eyebrow">Booking a job</p>
+        <h2 class="section-title">Three steps, no back-and-forth.</h2>
+        <p class="how__lede">Tell us the ZIP code and the problem. We match you with the nearest available technician and text you their name, photo, and ETA.</p>
+      </div>
+      <ol class="how__steps">
+        <li>
+          <span class="how__num">01</span>
+          <div>
+            <h3>Tell us what's wrong</h3>
+            <p>Pick a service, describe the issue, and enter your ZIP code — takes about 45 seconds.</p>
+          </div>
+        </li>
+        <li>
+          <span class="how__num">02</span>
+          <div>
+            <h3>We dispatch a technician</h3>
+            <p>You get a confirmed time window and a text when your technician is on the way.</p>
+          </div>
+        </li>
+        <li>
+          <span class="how__num">03</span>
+          <div>
+            <h3>Upfront price, then the fix</h3>
+            <p>You approve the price before any work starts. No surprise line items on the invoice.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section id="area" class="area">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">Where we work</p>
+      <h2 class="section-title section-title--center">Currently dispatching to these ZIP codes</h2>
+      <p class="area__lede">We're expanding coverage every quarter as we bring on new technicians. Don't see your ZIP? Join the waitlist below and we'll notify you.</p>
+      <div class="zip-chips" id="zipChips" aria-label="Serviced ZIP codes"></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">Customers</p>
+      <h2 class="section-title section-title--center">12,400 jobs. Mostly five stars.</h2>
+      <div class="reviews__grid">
+        <blockquote class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Quoted a window of 1–3pm and the technician texted me at 1:05. Fixed the water heater in under an hour."</p>
+          <cite>— Dana M., 30306</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"The price on the invoice matched the price I approved before they started. First time that's happened with a home repair."</p>
+          <cite>— Marcus T., 30044</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"AC went out on the hottest day of the year. Someone was at my door in 40 minutes."</p>
+          <cite>— Priya K., 30518</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / LEAD FORM -->
+  <section id="quote" class="quote">
+    <div class="wrap quote__grid">
+      <div class="quote__copy">
+        <p class="eyebrow">Free quote</p>
+        <h2 class="section-title">Tell us the job. We'll text you back.</h2>
+        <p>Most quotes go out within 15 minutes during business hours. No obligation, no spam calls.</p>
+        <ul class="quote__list">
+          <li>Response within 15 minutes, 7am–9pm</li>
+          <li>Upfront pricing before any work begins</li>
+          <li>Licensed &amp; insured technicians only</li>
+        </ul>
+      </div>
+
+      <form class="quote-form" id="quoteForm" novalidate>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row form-row--split">
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+            <label for="zip">ZIP code</label>
+            <input type="text" id="zip" name="zip" inputmode="numeric" maxlength="5" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="service">Service needed</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option>Plumbing</option>
+            <option>HVAC</option>
+            <option>Electrical</option>
+            <option>Appliance repair</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="details">What's going on? <span class="optional">(optional)</span></label>
+          <textarea id="details" name="details" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Request my free quote</button>
+        <p class="quote-form__fine">This form is a front-end demo — hook it up to your CRM, ad platform, or webhook to go live.</p>
+        <p id="formSuccess" class="form-success" hidden>Thanks — a dispatcher will text you shortly at the number you provided.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="logo logo--footer">
+      <span class="logo__mark">IG</span>
+      <span class="logo__text">IRONGATE<br><small>HOME SERVICES</small></span>
+    </div>
+    <div class="site-footer__cols">
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:1-844-555-0117">(844) 555-0117</a></p>
+        <p><a href="mailto:dispatch@irongatehome.example">dispatch@irongatehome.example</a></p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <p>License #HS-department</p>
+        <p>Insured &amp; bonded</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Sat, 7am–9pm</p>
+        <p>24/7 emergency dispatch</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap site-footer__legal">
+    <p>© FMD — sample site for portfolio purposes. Not a real business.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
